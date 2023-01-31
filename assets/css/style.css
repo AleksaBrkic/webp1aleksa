@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
 }
-#header{
+.header{
   height:80px;
   background-color: #852b19;
 }
@@ -10,16 +10,14 @@
   display:flex;
   justify-content: center;
 }
-#content,#pocetak{
+.content,#pocetak,#onama{
   display:flex;
   justify-content: center;
   background: rgba(133, 43, 25, 0.8);
   height:auto;
-}
-#pocetak{
   margin-top:3rem;
 }
-#tekst{
+#tekst,#tekst2{
   padding-left:10%;
   padding-right:10%;
 }
@@ -28,9 +26,8 @@
   font-size: 35px;
   padding-top:15%;
 }
-#slika{
+#slika,#autor{
   width:100%;
-  height:auto;
 }
 p,h1,h2{
 	font-family: 'Poppins', sans-serif;
@@ -69,13 +66,13 @@ img{
 }
 .menu {
     position: fixed;
-    transform: translateY(-100%);
+    transform: translateY(-200%);
     transition: transform 0.2s;
     padding-top:4rem;
     top: 0;
+    bottom:0;
     left: 0;
     right: 0;
-    bottom: 0;
     z-index: 99;
     background: #852b19;
     color: white;
@@ -103,15 +100,25 @@ img{
 	position:absolute;
   left:50%;
 }
+@media only screen and (max-width:1400px){
+  #tekst p{
+    padding-top:9%;
+  }
+}
 @media only screen and (max-width:1200px){
   #tekst p{
     font-size:30px;
+    padding-top:8%;
   }
 }
 @media only screen and (max-width:991px){
   #tekst p{
     font-size:25px;
-    padding-top:5%;
+    padding-top:3%;
+  }
+  .col-4{
+    width:100%;
+    margin-top:3rem;
   }
   .col-6{
     width:100%;
@@ -119,7 +126,7 @@ img{
   .linija{
     display:none;
   }
-  #content{
+  .content{
     margin:0;
   }
   ul{

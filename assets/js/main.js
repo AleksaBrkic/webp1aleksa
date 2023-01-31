@@ -2,7 +2,6 @@ window.onload=function(){
   var slikasrc=document.querySelector("#slika");
   slikasrc.src=slicice[0];
   slikasrc.alt=sliciceAlt[0];
-  console.log(slikasrc);
   window.setInterval(function(){shuffleImg(slikasrc,slicice,sliciceAlt)},5000);
 }
 var slicice=["assets/img/kafic.jpg","assets/img/kafic2.jpg","assets/img/vikend.jpg"];
@@ -12,10 +11,6 @@ var menuItems = document.querySelectorAll(".menuItem");
 var hamburger= document.querySelector(".hamburger");
 var menuIcon = document.querySelector(".menuIcon");
 var i=1;
-
-function penis(){
-  console.log("penis");
-}
 
 function shuffleImg(slika,src,alt){
   slika.src=slicice[i];
