@@ -60,6 +60,10 @@ font-size:1.8rem;
 #poruka{
   color:#000;
 }
+#textarea{
+  display:flex;
+  justify-content:center;
+}
 .dugme{
   border:transparent;
   background-color: #a6361f;
