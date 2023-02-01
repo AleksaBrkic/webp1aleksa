@@ -133,7 +133,7 @@ menuItems.forEach(
 function ispisMeni(el,nizSlika){
   for(let i=0;i<nizSlika.length;i++){
     let divEl=(`<div class="col-4 text-center flex-wrap mt-3 content-2 border fit-content">`
-    +`<div><img src=`+nizSlika[i].src+`/></div>`
+    +`<div><img src="`+nizSlika[i].src+`"alt="`+nizSlika[i].ime+`"/></div>`
     +`<p class="h2 mt-1">`+nizSlika[i].ime+`<br/>`+nizSlika[i].cena+` din</p>`);
     el.innerHTML=el.innerHTML+divEl;
   }
