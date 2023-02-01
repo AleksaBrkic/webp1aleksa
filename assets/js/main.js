@@ -6,7 +6,6 @@ window.onload=function(){
   ispisMeni(Alk,meniAlk);
   ispisMeni(BezAlk,meniBezAlk);
   datum();
-  pisiMenu();
 }
 var slike=[
   {
